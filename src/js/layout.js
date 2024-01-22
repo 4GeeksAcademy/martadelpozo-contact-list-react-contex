@@ -6,7 +6,6 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { ContactForm } from "./views/contactForm";
 import { EditForm } from "./views/editForm"
-import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -27,8 +26,6 @@ const Layout = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/contactForm" element={<ContactForm />} />
 						<Route path="/editForm/:theid" element={<EditForm />} />
-						<Route path="/demo" element={<Demo />} />
-						<Route path="/single/:theid" element={<Single />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />

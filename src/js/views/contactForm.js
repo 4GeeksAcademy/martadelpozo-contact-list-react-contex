@@ -45,41 +45,28 @@ export const ContactForm = () => {
             </div>
 
             <div className="row ms-5 p-3 mx-auto">
-                <div className="col-12">
-                    <label>Full name</label>
-                </div>
-                <div className="col-12 ">
+                <div className="col-12 mb-3">
+                    <label className="form-label">Full name</label>
                     <input className="form-control mx-auto" onChange={inputName} value={name} placeholder="Full name"></input>
                 </div>
-
-                <div className="col-12 mt-3">
-                    <label>Email </label>
-                </div>
-                <div className="col-12">
+                <div className="col-12 mb-3">
+                    <label className="form-label">Email </label>
                     <input className="form-control mx-auto" onChange={inputEmail} value={email} placeholder="Email"></input>
                 </div>
-
-                <div className="col-12 mt-3">
-                    <label>Phone </label>
-                </div>
-                <div className="col-12">
+                <div className="col-12 mb-3">
+                    <label className="form-label">Phone </label>
                     <input className="form-control mx-auto" onChange={inputPhone} value={phone} placeholder="Phone number"></input>
                 </div>
-
-                <div className="col-12 mt-3">
-                    <label>Address</label>
-                </div>
-                <div className="col-12">
+                <div className="col-12 mb-3">
+                    <label className="form-label">Address</label>
                     <input className="form-control mx-auto" onChange={inputAddress} value={address} placeholder="Address"></input>
                 </div>
-
-                <div className="col-12 mt-3">
+                <div className="col-12 mb-3">
                     <button className="btn btn-primary" style={{ width: "100%" }} onClick={handleSave}>
                         Add contact
                     </button>
                 </div>
-
-                <div className="container mt-3">
+                <div className="container mb-3">
                     <Link to="/">Back to contact list</Link>
                 </div>
             </div>
